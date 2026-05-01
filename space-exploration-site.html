@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space exploration</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="space-exploration-site.css">
+    </head>
+    <body>
+        <img src="earth.jpg" id="main-logo">
+        <h3 class="underline">Join Space <span>Exploration!</span></h3>
+        <div class="container">
+            <h1>Astro Weight Calculator</h1><br>    
+            <div>
+                <div>
+                    <label for="planet" style="color: rgb(11, 240, 163);"><em><b>Select a planet</b></em></label><br>
+                    <select id="planet">
+                        <option value="" disabled selected>Select</option>
+                        <option value="1.148">Neptune</option>
+                        <option value="0.917">Uranus</option>
+                        <option value="1.139">Saturn</option>
+                        <option value="2.640">Jupiter</option>
+                        <option value="0.3895">Mars</option>
+                        <option value="0.1655">Moon</option>
+                        <option value="1">Earth</option>
+                        <option value="0.9032">Venus</option>
+                        <option value="0.06">Pluto</option>
+                        <option value="0.377">Mercury</option>
+                        <option value="27.9">Sun</option>
+                    </select>
+                </div>
+                <div>
+                    <input type='number'  id="earthWeight"  placeholder="Enter your weight">
+                </div>               
+            </div>
+            <button onclick="calculateWeight()"><h2>Calculate</h2></button>
+            <div id="result"></div>
+        </div>
+        
+        <script src="space-exploration-site.js"></script>
+    </body>
+</html>
